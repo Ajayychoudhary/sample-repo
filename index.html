@@ -4,8 +4,280 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+        .box{
+            height: 10vh;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            padding: 0px 2px 0px 2px;
+        }
+        .box>div{
+            color: aliceblue;
+            padding: 0px 2px 0px 2px;
+        }
+        .big{
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            background-image: url("https://assets.entrepreneur.com/content/3x2/2000/20180404140346-GettyImages-713835137.jpeg");
+            background-size: cover;
+        }
+        .sml{
+            background-color: white;
+            width: 40%;
+            height: 50vh;
+            border: 1px solid;
+            margin: 50px;
+        }
+        .box2{
+            height: auto;
+            width: 90;
+            padding: 200px;
+        }
+        .grid {
+            height: auto;
+            width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Change the number of columns here */
+      grid-template-rows: repeat(2, 100px); /* Change the number of rows or height here */
+      gap: 10px;
+      border: 1px solid black;
+       /* Change the width of the grid */
+    }
+
+    .box3 {
+      border: 1px solid #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: lightblue;
+    }
+    .box3 img {
+      max-width: 100%; /* Set the maximum width of the image to fit the box */
+      max-height: 100%; /* Set the maximum height of the image to fit the box */
+      display: block; /* Ensure the image behaves as a block element */
+      margin: auto; /* Center the image */
+    }
+    table {
+      border: 1px dotted black;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+    </style>
 </head>
 <body>
-    <h1>this is my first heading</h1>
+    <div class="box">
+        <div>LIPS</div>
+        <div>EYES</div>
+        <div>FACE</div>
+        <div>NAILS</div>
+        <div>SKINCARE</div>
+        <div>ACCESSORIES</div>
+        <div>GIFTS & KITS</div>
+        <div>BESTSELLERS</div>
+        <div>NEW LAUNCHES</div>
+        <div>OFFERS</div>
+        <div>BLOG</div>
+
+    </div>
+    <div class="big">
+        <br>
+    <div class="sml">
+        <div>
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <span class="error" id="firstNameError"></span>
+        </div>
+        <div>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+        </div>
+        <div>
+            <label for="interest">Choose a pet *</label>
+            <select id="interest" name="interest" required>
+                <option value="">Select...</option>
+                <option value="dog">Dog</option>
+                <option value="lion">Cat</option>
+                <option value="mice">Hamster</option>
+                <option value="chetak">horse</option>
+                <option value="kamdhenu">cow</option>
+            </select>
+            <span class="error" id="interestError"></span>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Select a maintaince drone</legend>
+            
+                <input type="radio" id="huey" name="monster" value="huey" />
+                <label for="huey">Kraken</label><br />
+            
+                <input type="radio" id="dewey" name="monster" value="dewey" />
+                <label for="dewey">Sasquatch</label><br />
+            
+                <input type="radio" id="loius" name="monster" value="loius" />
+                <label for="loius">Mothman</label>
+              </fieldset>
+        </div>
+        <div>
+            <label for="date">Select a date:</label>
+              <input type="date" id="date" name="date">
+
+               <label for="time">Select a time:</label>
+               <input type="time" id="time" name="time">
+  
+ 
+        </div>
+        <br>
+        <div>
+            <button style="background-color: yellow;">Submit</button>
+        </div>
+    </div>
+    </div>
+    
+    <br>
+    <div class="box2">
+        <h1 style="align-content: center; font-weight: bolder;">Flower Video</h1>
+        <video controls width="450">
+            <source src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-11-19/flower_376567.webm" type="video/webm" />
+    </div>
+
+    <div class="grid">
+        <p>16 speaker from 7 countries and 3 continent</p>
+        <h1>MEET OUR SPEAKERS</h1>
+        <div class="box3">
+            <img src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" alt="">
+            <h1>JOHNATAN TROAT</h1>
+            <p>DIRECTOR MANAGER @ PEPSI</p>
+    </div>
+        <div class="box3">
+            <img src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" alt="">
+            <h1>JOHNATAN TROAT</h1>
+            <p>DIRECTOR MANAGER @ PEPSI</p></div>
+        <div class="box3">
+            <img src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" alt="">
+            <h1>JOHNATAN TROAT</h1>
+            <p>DIRECTOR MANAGER @ PEPSI</p></div>
+        <div class="box3"><img src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" alt="">
+            <h1>JOHNATAN TROAT</h1>
+            <p>DIRECTOR MANAGER @ PEPSI</p></div>
+        <div class="box3"><img src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" alt="">
+            <h1>JOHNATAN TROAT</h1>
+            <p>DIRECTOR MANAGER @ PEPSI</p></div>
+        <div class="box3"><img src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" alt="">
+            <h1>JOHNATAN TROAT</h1>
+            <p>DIRECTOR MANAGER @ PEPSI</p></div>
+        <div class="box3"><img src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" alt="">
+            <h1>JOHNATAN TROAT</h1>
+            <p>DIRECTOR MANAGER @ PEPSI</p></div>
+        <div class="box3"><img src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" alt="">
+            <h1>JOHNATAN TROAT</h1>
+            <p>DIRECTOR MANAGER @ PEPSI</p></div>
+      </div>
+
+<br><br><br>
+<table>
+    <thead>
+      <tr>
+        <th>Test No</th>
+        <th>Description</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Has the lips, eyes, etc section as shown  </td>
+        <td>1</td>
+      </tr>
+      <tr class="total">
+        <td colspan="2">Total Marks:</td>
+        <td>22</td>
+      </tr>
+
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+  
+    
 </body>
 </html>
